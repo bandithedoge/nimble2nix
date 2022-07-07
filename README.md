@@ -33,3 +33,4 @@ This is only the bare minimum required to build a package. See [`example_package
 
 - [ ] Development shells
 - [ ] Build phase customization
+- [ ] Package overrides
