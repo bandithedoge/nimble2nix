@@ -14,7 +14,7 @@ requires "jsony"
 # A package with its own dependencies
 requires "pkginfo"
 
-# A package with extra non-Nim dependencies (see `flake.lock`)
+# A package with extra non-Nim dependencies (see `flake.nix`)
 requires "sdl2"
 
 # A package from a specific git branch
