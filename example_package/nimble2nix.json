@@ -1,0 +1,46 @@
+{
+  "semver-1.1.1": {
+    "url": "https://github.com/euantorano/semver.nim",
+    "rev": "3b7ace48704236329363290c62ce43f4d35f684d",
+    "date": "2020-07-06T16:04:27+01:00",
+    "path": "/nix/store/qyshrdym4yrrm7yhz9vwwlmmywgb42v2-semver.nim",
+    "sha256": "0967l4cjms4cj6j94ngfv8s7ppmyk2iqlqp516787r6h35xycy8p",
+    "fetchLFS": false,
+    "fetchSubmodules": true,
+    "deepClone": false,
+    "leaveDotGit": false
+  },
+  "pkginfo-0.1.0": {
+    "url": "https://github.com/openpeep/pkginfo",
+    "rev": "1942a570a27cb0e7ea4c4aafa177ddd570424ce5",
+    "date": "2022-06-16T18:49:18+03:00",
+    "path": "/nix/store/yn1my5kky7d75ak2hl3s6jgdabx6rm69-pkginfo",
+    "sha256": "1psa6klbr0ryskkynsx14xi7szsgbb8vh5gfjk7kl9224pl1l57r",
+    "fetchLFS": false,
+    "fetchSubmodules": true,
+    "deepClone": false,
+    "leaveDotGit": false
+  },
+  "jsony-1.1.3": {
+    "url": "https://github.com/treeform/jsony",
+    "rev": "d0e69bddf83874e15b5c2f52f8b1386ac080b443",
+    "date": "2022-01-14T10:20:52-08:00",
+    "path": "/nix/store/v95alj8m6wm2q09533zbr3q7vs65aggn-jsony",
+    "sha256": "1p250wb97nzz2g0vvq6mn521fx7sn1jpk1ralbzqh5q8clh4g7wr",
+    "fetchLFS": false,
+    "fetchSubmodules": true,
+    "deepClone": false,
+    "leaveDotGit": false
+  },
+  "asynctools-#non-blocking": {
+    "url": "https://github.com/yyoncho/asynctools",
+    "rev": "f1ad7289ff38f3b1c1987307845de373fc9af499",
+    "date": "2022-05-17T13:43:01+03:00",
+    "path": "/nix/store/qdiycnrz0vrdc342gkwni49f8m85989g-asynctools-f1ad728",
+    "sha256": "1iyr2k3vrbqfwm70w9bsyhis799lm9rin8j5pkjxgrpshm1znpbd",
+    "fetchLFS": false,
+    "fetchSubmodules": true,
+    "deepClone": false,
+    "leaveDotGit": false
+  }
+}
