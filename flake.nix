@@ -9,15 +9,19 @@
     nixpkgs,
     ...
   } @ inputs:
-    flake-utils.lib.eachDefaultSystem (
-      system: let
-        pkgs = nixpkgs.legacyPackages.${system};
-      in {
-        packages.${system}.default = pkgs.callPackage ./default.nix {};
-
-        overlays.default = import ./overlay.nix {};
-
+    (flake-utils.lib.eachDefaultSystem (system: let
+      pkgs = nixpkgs.legacyPackages.${system};
+    in rec {
+      defaultPackage = pkgs.callPackage ./default.nix {};
+      packages = {
+        nimble2nix = defaultPackage;
         buildNimblePackage = import ./buildNimblePackage.nix {inherit pkgs;};
-      }
-    );
+      };
+    }))
+    // {
+      overlay = final: prev: {
+        nimble2nix = prev.callPackage ./default.nix {};
+        buildNimblePackage = import ./buildNimblePackage.nix {pkgs = prev;};
+      };
+    };
 }

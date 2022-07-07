@@ -1,4 +1,4 @@
-{pkgs ? import <nixpkgs> {}}:
+{pkgs}:
 pkgs.nimPackages.buildNimPackage {
   pname = "nimble2nix";
   version = "0.1";
