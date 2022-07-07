@@ -5,8 +5,8 @@
   };
   outputs = {
     self,
-    lib,
     flake-utils,
+    nixpkgs,
     ...
   } @ inputs:
     flake-utils.lib.eachDefaultSystem (
@@ -16,6 +16,8 @@
         packages.${system}.default = pkgs.callPackage ./default.nix {};
 
         overlays.default = import ./overlay.nix {};
+
+        buildNimblePackage = import ./buildNimblePackage.nix {inherit pkgs;};
       }
     );
 }
